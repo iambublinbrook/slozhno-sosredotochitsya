@@ -1,5 +1,82 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+/* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  margin: 0 auto;
+  padding: 0 10px;
+  background-image: var(--bg-image);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--main-text-color);
+  font-family: var(--main-font-family);
+  background-position: top center;
+  font-size: var(--main-text-size);
 }
+
+@media (min-width: 768px) {
+
+  .page {
+    padding-top: 0;
+    padding: 0px 20px;
+  }
+}
+
+.shadow-text {
+  color: var(--shadow-color);
+  font-weight: 700;
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  line-height: 95.7px;
+}
+
+@media (width >= 375px) {
+  .shadow-text  {
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
+}
+
+.title-decor {
+  background-color: var(--accent-color);
+  color: var(--decor-text-color);
+}
+
+.heading {
+  color: var(--heading-color);
+  font-weight: 700;
+  font-size: var(--main-text-size);
+  font-family: var(--main-font-family);
+  line-height: 23.4px;
+  margin: 0 0 20px;
+}
+
+.heading__h3 {
+  font-weight: 700;
+  font-size: var(--main-text-size);
+}
+
+.heading__h4 {
+  font-weight: 400;
+  line-height: 23.4px;
+  font-size: var(--main-text-size);
+}
+
+.accent-link {
+  text-decoration: none;
+  text-shadow: 2px 2px 0 var(--accent-color);
+}
+
+@media (any-hover: hover) {
+
+  .accent-link:hover {
+    color: var(--link-color);
+    text-decoration: underline;
+    transition: color 0.1s linear;
+  }
+}
+
+.paragraph-text {
+  margin: 10px 0 20px;
+  line-height: 23.4px;
+  font-size: var(--main-text-size);
+}
+
