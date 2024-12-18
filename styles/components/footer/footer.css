@@ -5,6 +5,6 @@
 .footer__text {
   justify-self: center;
   align-self: center;
-  text-shadow: 2px 2px 0 var(--accent-color);
   color: var(--accent-heading-color);
+  text-shadow: 2px 2px 0 var(--accent-color);
 }

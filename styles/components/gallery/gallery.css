@@ -54,17 +54,17 @@ img {
 }
 
 .gallery__image {
-  inline-size: 100%;
   object-fit: cover;
   object-position: top;
+  inline-size: 100%;
 }
 
 @media (min-width: 768px) {
 
 .gallery__image {
-  block-size: 100%;
   object-fit: cover;
   object-position: top;
+  block-size: 100%;
 }
 }
 

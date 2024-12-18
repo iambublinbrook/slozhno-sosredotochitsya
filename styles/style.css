@@ -4,21 +4,21 @@
 /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   margin: 0 auto;
   padding: 0 10px;
-  background-image: var(--bg-image);
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
   color: var(--main-text-color);
   font-family: var(--main-font-family);
-  background-position: top center;
   font-size: var(--main-text-size);
+  background-image: var(--bg-image);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 @media (min-width: 768px) {
 
   .page {
-    padding-top: 0;
     padding: 0px 20px;
+    padding-top: 0;
   }
 }
 
@@ -36,17 +36,17 @@
 }
 
 .title-decor {
-  background-color: var(--accent-color);
   color: var(--decor-text-color);
+  background-color: var(--accent-color);
 }
 
 .heading {
+  margin: 0 0 20px;
   color: var(--heading-color);
+  font-family: var(--main-font-family);
   font-weight: 700;
   font-size: var(--main-text-size);
-  font-family: var(--main-font-family);
   line-height: 23.4px;
-  margin: 0 0 20px;
 }
 
 .heading__h3 {
@@ -56,8 +56,8 @@
 
 .heading__h4 {
   font-weight: 400;
-  line-height: 23.4px;
   font-size: var(--main-text-size);
+  line-height: 23.4px;
 }
 
 .accent-link {
@@ -76,7 +76,7 @@
 
 .paragraph-text {
   margin: 10px 0 20px;
-  line-height: 23.4px;
   font-size: var(--main-text-size);
+  line-height: 23.4px;
 }
 
